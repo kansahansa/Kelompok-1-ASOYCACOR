@@ -3,13 +3,13 @@
 h1 {text-align: center;
     font-family: "Source Sans Pro", Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    color : blueviolet;
+    color : babygreen;
 }
 
 body{background-color:rgb(231, 228, 225);
 }
 ul{list-sytle-type:none;
-background-color: aquamarine;
+background-color: pink;
 border: 4px saddlebrown;
 }
 marquee {font-size:30px;/
