@@ -3,7 +3,7 @@ h1 {
     text-align: center;
     font-family: "Source Sans Pro", Georgia, serif;
     font-weight: bold;
-    color: green;
+    color: darkgreen;
 }
 
 body {
@@ -13,14 +13,18 @@ body {
 
 ul {
     list-style-type: none;
-    background-color: honeydew;
-    border: 4px solid darkgreen;
-    padding: 20px;
+    background-color: pink;
+    border: 3px solid #d4a5a5; 
+    padding: 10px;
+    margin: 0;
 }
 
 marquee {
     font-size: 30px;
-    color: green;
+    color: darkgreen;
+    background-color: rgb(200, 255, 200); 
+    font-weight: bold;
+    padding: 10px 0;
 }
 
 .caption-main {
@@ -34,9 +38,13 @@ marquee {
     background-color: lemonchiffon;
 }
 
-li {
+li a {
+    text-decoration: none;
     color: darkgreen;
+    font-weight: bold;
+    padding: 0 10px;
 }
+
 marquee {font-size:30px;/
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
