@@ -1,18 +1,46 @@
 /* Place your CSS styles in this file */
 
-h1 {text-align: center;
+body {
+    background-color: #d4f5d0; /* hijau soft biar adem */
+    margin: 0;
     font-family: "Source Sans Pro", Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color : babygreen;
 }
 
-body{background-color:rgb(231, 228, 225);
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: darkgreen;
+    margin-top: 20px;
 }
-ul{list-sytle-type:none;
-background-color: pink;
-border: 4px saddlebrown;
+
+/* Navbar / list */
+ul {
+    list-style-type: none; /* typo diperbaiki */
+    background-color: pink;
+    border: 4px solid saddlebrown; /* biar kelihatan */
+    padding: 10px;
+    margin: 0;
 }
-marquee {font-size:30px;/
+
+/* Marquee (caption berjalan) */
+marquee {
+    font-size: 28px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Caption utama */
+.caption-main {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+/* Caption tambahan (persuasif) */
+.caption-highlight {
+    color: crimson; /* beda warna biar menarik */
+    font-style: italic;
+}marquee {font-size:30px;/
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
