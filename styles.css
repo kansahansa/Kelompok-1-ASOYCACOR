@@ -98,9 +98,10 @@ li:last-child {
     border-radius: 20px;
     font-weight: bold;
     font-size: 15px;
-    color: white;
+    color: #33691e;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 4px 0px rgba(0,0,0,0.1);
+    display: inline-block;
 }
 
 .nav-pill:active {
@@ -109,29 +110,30 @@ li:last-child {
 }
 
 .pill-green {
-    background-color: #9ccc65;
+    background-color: #c5e1a5;
+    color: #33691e;
 }
 
 .pill-green:hover {
-    background-color: #8bc34a;
+    background-color: #aed581;
 }
 
 .pill-yellow {
-    background-color: #ffee58;
+    background-color: #fff59d;
     color: #827717;
 }
 
 .pill-yellow:hover {
-    background-color: #fdd835;
+    background-color: #fff176;
 }
 
 .pill-lime {
-    background-color: #d4e157;
+    background-color: #e6ee9c;
     color: #33691e;
 }
 
 .pill-lime:hover {
-    background-color: #c0ca33;
+    background-color: #dce775;
 }
 marquee {font-size:30px;/
 
