@@ -13,8 +13,8 @@ body {
 
 ul {
     list-style-type: none;
-    background-color: pink;
-    border: 4px solid saddlebrown;
+    background-color: honeydew;
+    border: 4px solid darkgreen;
     padding: 20px;
 }
 
@@ -31,11 +31,11 @@ marquee {
 .caption-highlight {
     color: crimson;
     font-style: italic;
-    background-color: white;
+    background-color: lemonchiffon;
 }
 
 li {
-    color: saddlebrown;
+    color: darkgreen;
 }
 marquee {font-size:30px;/
 
