@@ -7,7 +7,6 @@ h1 {
     font-size: 32px;
     letter-spacing: 1px;
     margin-top: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.03);
 }
 
 body {
@@ -31,18 +30,13 @@ ul {
     max-width: 850px;
     width: 100%;
     box-shadow: 0px 20px 40px rgba(130, 119, 23, 0.05);
-    transition: transform 0.3s ease;
-}
-
-ul:hover {
-    transform: translateY(-5px);
 }
 
 marquee {
     display: block;
     background-color: #f1f8e9;
     color: #558b2f;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     padding: 20px;
     border-radius: 25px;
@@ -98,7 +92,6 @@ li:last-child {
     border-radius: 25px;
     font-weight: bold;
     font-size: 15px;
-    transition: all 0.2s ease;
     display: inline-block;
     margin: 5px;
     border: 2px solid white;
@@ -109,29 +102,14 @@ li:last-child {
     color: #33691e;
 }
 
-.pill-green:hover {
-    background-color: #c5e1a5;
-    transform: scale(1.05);
-}
-
 .pill-yellow {
     background-color: #fff9c4;
     color: #827717;
 }
 
-.pill-yellow:hover {
-    background-color: #fff59d;
-    transform: scale(1.05);
-}
-
 .pill-lime {
     background-color: #f0f4c3;
     color: #558b2f;
-}
-
-.pill-lime:hover {
-    background-color: #e6ee9c;
-    transform: scale(1.05);
 }
 marquee {font-size:30px;/
 
