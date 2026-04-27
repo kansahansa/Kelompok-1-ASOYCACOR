@@ -7,13 +7,13 @@ h1 {
     font-size: 32px;
     letter-spacing: 1px;
     margin-top: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.03);
 }
 
 body {
-    background-color: #f1f8e9;
-    background-image: radial-gradient(#e1eedb 1px, transparent 1px);
-    background-size: 20px 20px;
+    background-color: #f9fdf5;
+    background-image: radial-gradient(#f1f8e9 1px, transparent 1px);
+    background-size: 25px 25px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -27,10 +27,10 @@ ul {
     background-color: #feffee;
     border: 15px solid white;
     border-radius: 50px;
-    padding: 40px;
+    padding: 45px;
     max-width: 850px;
     width: 100%;
-    box-shadow: 0px 15px 35px rgba(0,0,0,0.08);
+    box-shadow: 0px 20px 40px rgba(130, 119, 23, 0.05);
     transition: transform 0.3s ease;
 }
 
@@ -40,44 +40,44 @@ ul:hover {
 
 marquee {
     display: block;
-    background-color: #dcedc8;
-    color: #33691e;
+    background-color: #f1f8e9;
+    color: #558b2f;
     font-size: 28px;
     font-weight: bold;
-    padding: 18px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    border: 2px dashed #aed581;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 35px;
+    border: 3px dashed #dcedc8;
 }
 
 .caption-main {
-    color: #558b2f;
+    color: #689f38;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
     display: block;
-    margin: 20px 0 10px 0;
-    border-left: 5px solid #c5e1a5;
-    padding-left: 15px;
+    margin: 25px 0 12px 0;
+    border-left: 6px solid #e6ee9c;
+    padding-left: 18px;
 }
 
 .caption-highlight {
-    color: #827717;
-    background-color: #fff9c4;
+    color: #9e9d24;
+    background-color: #fffde7;
     font-weight: bold;
     font-style: normal;
-    padding: 6px 12px;
-    border-radius: 8px;
+    padding: 8px 15px;
+    border-radius: 12px;
     display: inline-block;
-    margin: 5px 0;
-    box-shadow: 2px 2px 0px #e6ee9c;
+    margin: 8px 0;
+    border: 1px solid #fff9c4;
 }
 
 li {
     color: #33691e;
-    padding: 12px 0;
+    padding: 15px 0;
     line-height: 1.8;
-    font-size: 17px;
-    border-bottom: 1px solid #f0f4c3;
+    font-size: 18px;
+    border-bottom: 1px solid #f9fbe7;
 }
 
 li:last-child {
@@ -94,46 +94,44 @@ li:last-child {
 
 .nav-pill {
     text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 20px;
+    padding: 12px 35px;
+    border-radius: 25px;
     font-weight: bold;
     font-size: 15px;
-    color: #33691e;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0px 4px 0px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
     display: inline-block;
-}
-
-.nav-pill:active {
-    transform: translateY(3px);
-    box-shadow: none;
+    margin: 5px;
+    border: 2px solid white;
 }
 
 .pill-green {
-    background-color: #c5e1a5;
+    background-color: #dcedc8;
     color: #33691e;
 }
 
 .pill-green:hover {
-    background-color: #aed581;
+    background-color: #c5e1a5;
+    transform: scale(1.05);
 }
 
 .pill-yellow {
-    background-color: #fff59d;
+    background-color: #fff9c4;
     color: #827717;
 }
 
 .pill-yellow:hover {
-    background-color: #fff176;
+    background-color: #fff59d;
+    transform: scale(1.05);
 }
 
 .pill-lime {
-    background-color: #e6ee9c;
-    color: #33691e;
+    background-color: #f0f4c3;
+    color: #558b2f;
 }
 
 .pill-lime:hover {
-    background-color: #dce775;
+    background-color: #e6ee9c;
+    transform: scale(1.05);
 }
 marquee {font-size:30px;/
 
