@@ -3,32 +3,32 @@ h1 {
     text-align: center;
     font-family: "Source Sans Pro", Georgia, serif;
     font-weight: bold;
-    color: forestgreen;
+    color: slateblue;
 }
 
 body {
-    background-color: #f7fff7;
+    background-color: #fff5ee;
     margin: 0;
 }
 
 ul {
     list-style-type: none;
-    background-color: ivory;
-    border: 3px solid palegoldenrod;
+    background-color: #f3e5f5;
+    border: 3px solid #e1bee7;
     padding: 20px;
 }
 
 marquee {
     font-size: 30px;
-    color: seagreen;
+    color: slateblue;
     background-color: transparent;
 }
 
 .caption-main,
 .caption-highlight {
-    color: teal;
+    color: #6a5acd;
     font-weight: bold;
-    background-color: ivory;
+    background-color: transparent;
     font-style: normal;
     border: none;
     display: inline-block;
@@ -36,7 +36,7 @@ marquee {
 }
 
 li {
-    color: saddlebrown;
+    color: #4b0082;
     padding: 5px 0;
 }
 marquee {font-size:30px;/
