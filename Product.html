@@ -76,34 +76,36 @@
             border: 3px dashed white;
         }
 
+        /* Wadah utama kartu pembungkus aplikasi */
         .card-container {
             background-color: #feffee;
             border: 12px solid white;
             border-radius: 40px;
-            padding: 30px;
-            width: 85%;
-            max-width: 800px;
-            box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
-        }
-
-        .card {
-            background-color: white;
-            margin: 15px 0;
             padding: 20px;
+            width: 90%;
+            max-width: 1000px; /* Diperlebar sedikit agar tabel Streamlit leluasa */
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            box-sizing: border-box;
+        }
+
+        /* Frame khusus pembungkus Iframe agar responsif */
+        .responsive-iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 750px; /* Tinggi box aplikasi finansialmu */
             border-radius: 20px;
-            border-left: 8px solid #c5e1a5;
+            border: 2px solid #dcedc8;
         }
 
-        .card h2 {
-            color: #558b2f;
-            margin-top: 0;
-            font-size: 20px;
-        }
-
-        .card p {
-            color: #33691e;
-            line-height: 1.6;
-            margin-bottom: 0;
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -120,12 +122,11 @@
 
     <h1>Product</h1>
 
-    <marquee>.</marquee>
+    <marquee>EduFinance: Kelola keuangan belajarmu dengan cerdas, rapi, dan otomatis! 💰</marquee>
 
     <div class="card-container">
-        <div class="card">
-            <h2>.</h2>
-            <p>..</p>
+        <div class="responsive-iframe-container">
+            <iframe src="https://kelompok1-edufinance.streamlit.app/?embed=true"></iframe>
         </div>
     </div>
 
