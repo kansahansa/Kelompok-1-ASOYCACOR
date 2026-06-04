@@ -116,7 +116,7 @@
         .card {
             background-color: white;
             margin: 15px 0;
-            padding: 20px;
+            padding: 25px;
             border-radius: 20px;
             border-left: 8px solid #c5e1a5;
         }
@@ -124,34 +124,52 @@
         .card h2 {
             color: #558b2f;
             margin-top: 0;
-            font-size: 20px;
+            font-size: 24px;
+            border-bottom: 2px dashed #e1eedb;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-align: center;
         }
 
-        .card p {
+        /* --- Style Tabel Filosofi --- */
+        .filosofi-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
             color: #33691e;
-            line-height: 1.6;
-            margin-bottom: 15px;
         }
 
-        .card p:last-child {
-            margin-bottom: 0;
+        .filosofi-table th {
+            background-color: #dcedc8;
+            color: #33691e;
+            text-align: left;
+            padding: 12px;
+            font-size: 16px;
         }
 
-        .canva-link {
-            display: inline-block;
-            background-color: #558b2f;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 10px;
+        .filosofi-table td {
+            padding: 15px 12px;
+            border-bottom: 1px solid #e1eedb;
+            vertical-align: top;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .filosofi-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .element-badge {
             font-weight: bold;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-            margin-bottom: 15px;
+            white-space: nowrap;
+            color: #558b2f;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-
-        .canva-link:hover {
-            background-color: #33691e;
+        
+        .badge-dark {
+            color: #212121;
         }
     </style>
 </head>
@@ -168,7 +186,7 @@
 
     <h1>Design</h1>
 
-    <marquee>Yuk, cari tahu filosofi di balik pembuatan logo EduFinance!</marquee>
+    <marquee>🦊 Simak Ringkasan Makna & Filosofi Komponen Logo EduFinance ✨</marquee>
 
     <div class="embed-container">
         <iframe loading="lazy" src="https://www.canva.com/design/DAHLnXYYfFo/-YVGXcGmNclboyML8eIelA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
@@ -177,21 +195,42 @@
     <div class="card-container">
         <div class="card">
             <h2>🎨 Filosofi Logo EduFinance</h2>
-                 
-
-            <p>
-                Bentuk hewan rubah pada logo melambangkan sifat cerdas, waspada, dan strategis yang penting dalam mengatur rencana keuangan. 
-                Rubah yang sedang berdiri kokoh mencerminkan stabilitas finansial dan ekor rubah yang besar melambangkan tabungan sebagai bentuk kesiapan untuk kebutuhan di masa depan.
-            </p>
             
-            <p>
-                Tulisan 'EDU' yang menyatu pada logo menunjukkan bahwa situs ini tidak hanya berfungsi sebagai alat untuk menghitung tabungan, tetapi juga sebagai sarana edukasi keuangan. 
-                Sementara itu, tulisan 'FINANCE.' dengan titik di akhir memberikan kesan tegas, pasti, dan terstruktur, menggambarkan keputusan finansial yang jelas dan terarah.
-            </p>
+            <table class="filosofi-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Elemen Logo</th>
+                        <th style="width: 70%;">Arti & Filosofi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="element-badge">🦊 Hewan Rubah</td>
+                        <td>Melambangkan sifat <strong>cerdas, waspada, dan strategis</strong> yang krusial dalam menyusun manajemen keuangan.</td>
+                    </tr>
+                    <tr>
+                        <td class="element-badge">💪 Berdiri Kokoh</td>
+                        <td>Mencerminkan fondasi <strong>stabilitas finansial</strong> yang kuat dan mapan.</td>
+                    </tr>
+                    <tr>
+                        <td class="element-badge">💰 Ekor Besar</td>
+                        <td>Merepresentasikan <strong>tabungan masa depan</strong> sebagai bentuk kesiapan pemenuhan kebutuhan.</td>
+                    </tr>
+                    <tr>
+                        <td class="element-badge">📚 Teks 'EDU'</td>
+                        <td>Menunjukkan peran situs sebagai <strong>sarana edukasi keuangan</strong> interaktif, bukan sekadar alat hitung.</td>
+                    </tr>
+                    <tr>
+                        <td class="element-badge">🎯 Teks 'FINANCE.'</td>
+                        <td>Tanda titik (.) menegaskan kesan <strong>pasti, tegas, terstruktur</strong>, dan arah keputusan finansial yang jelas.</td>
+                    </tr>
+                    <tr>
+                        <td class="element-badge badge-dark">⚫ Warna Hitam</td>
+                        <td>Melambangkan karakter yang <strong>tegas, kuat, tangguh, serta profesionalitas</strong> yang tinggi.</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <p>
-                Sedangkan untuk pilihan warna hitam pada logo melambangkan ketegasan, kekuatan, dan profesionalitas.
-            </p>
         </div>
     </div>
 
