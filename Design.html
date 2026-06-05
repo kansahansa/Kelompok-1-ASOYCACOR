@@ -77,51 +77,83 @@
             border: 3px dashed white;
         }
 
-        /* --- STRUKTUR UTAMA (Asli Milikmu) --- */
+        /* --- CONTAINER UTAMA (Desain Estetik & Rapi) --- */
         .card-container {
             background-color: #feffee;
             border: 12px solid white;
             border-radius: 40px;
             padding: 30px;
             width: 85%;
-            max-width: 800px;
+            max-width: 850px;
             box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
             box-sizing: border-box;
         }
 
-        /* --- MODIFIKASI KARTU MENJADI KOLOM PER-POIN --- */
+        /* --- EMBED CANVA PLAYER (Tampilan Interaktif Sesuai Gambar) --- */
+        .canva-embed-box {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 56.25%; /* Aspek rasio 16:9 pas presentasi */
+            box-shadow: 0 4px 20px rgba(63,69,81,0.12);
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 6px solid white;
+            will-change: transform;
+        }
+
+        .canva-embed-box iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* --- DESAIN KOLOM PER-POIN (Aesthetic Card) --- */
         .step-column {
             background-color: white;
-            margin: 20px 0;
-            padding: 25px;
-            border-radius: 24px; /* Sudut membulat halus sesuai gambar */
+            margin: 18px 0;
+            padding: 22px;
+            border-radius: 24px;
             border-left: 8px solid #c5e1a5;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Bayangan lembut per kolom */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
             display: flex;
             gap: 20px;
             align-items: flex-start;
+            transition: transform 0.2s ease;
+        }
+
+        .step-column:hover {
+            transform: translateY(-2px); /* Efek melayang interaktif */
         }
 
         .step-column h2 {
             color: #558b2f;
             margin-top: 0;
-            font-size: 20px;
-            margin-bottom: 8px;
+            font-size: 19px;
+            margin-bottom: 6px;
+            font-family: "Source Sans Pro", sans-serif;
         }
 
-        /* Lingkaran Angka Hijau Minimalis */
+        /* Lingkaran Angka Pastel Retro */
         .step-number {
             background-color: #558b2f;
             color: white;
             font-weight: bold;
             font-size: 18px;
-            min-width: 40px;
-            height: 40px;
+            min-width: 42px;
+            height: 42px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
+            box-shadow: 0 3px 8px rgba(85,139,47,0.2);
         }
 
         .step-content {
@@ -133,27 +165,6 @@
             color: #555555;
             line-height: 1.6;
             font-size: 15px;
-        }
-
-        /* Tombol Link Canva Baru */
-        .canva-btn {
-            display: block;
-            width: fit-content;
-            background-color: #558b2f;
-            color: white;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 15px;
-            font-weight: bold;
-            text-align: center;
-            margin: 30px auto 10px auto;
-            transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(85,139,47,0.2);
-        }
-
-        .canva-btn:hover {
-            background-color: #33691e;
-            transform: translateY(-1px);
         }
     </style>
 </head>
@@ -169,10 +180,15 @@
 
     <h1>Product</h1>
 
-    <marquee>🛠️ Proses Pengembangan Produk & Aplikasi EduFinance ✨</marquee>
+    <marquee>🦊 ✨ Geser lembar presentasi di bawah ini untuk melihat detail pengembangan produk! ✨ 🛠️</marquee>
 
     <div class="card-container">
         
+        <div class="canva-embed-box">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAHI9yIdJb8/cggNfIJUuBNp0ZjlddBseA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+
         <div class="step-column">
             <div class="step-number">1</div>
             <div class="step-content">
@@ -212,10 +228,6 @@
                 <p>Website diuji untuk memastikan semua fitur berjalan dengan baik, kemudian dipublikasikan melalui <strong>GitHub Pages</strong> agar mudah diakses oleh semua orang.</p>
             </div>
         </div>
-
-        <a class="canva-btn" href="https://www.canva.com/design/DAHI9yIdJb8/cggNfIJUuBNp0ZjlddBseA/view" target="_blank" rel="noopener">
-            🔗 Lengkapnya Klik di Sini
-        </a>
 
     </div>
 
