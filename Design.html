@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Website - Design</title>
+    <title>Finance Website - Product Development</title>
     <style>
         h1 {
             text-align: center;
@@ -77,31 +77,7 @@
             border: 3px dashed white;
         }
 
-        .embed-container {
-            position: relative; 
-            width: 85%; 
-            max-width: 800px; 
-            height: 0; 
-            padding-top: 56.25%; 
-            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
-            margin-top: 1.6em; 
-            margin-bottom: 1.6em; 
-            overflow: hidden; 
-            border-radius: 8px; 
-            will-change: transform;
-        }
-
-        .embed-container iframe {
-            position: absolute; 
-            width: 100%; 
-            height: 100%; 
-            top: 0; 
-            left: 0; 
-            border: none; 
-            padding: 0; 
-            margin: 0;
-        }
-
+        /* Mempertahankan struktur pembungkus asli milikmu */
         .card-container {
             background-color: #feffee;
             border: 12px solid white;
@@ -116,7 +92,7 @@
         .card {
             background-color: white;
             margin: 15px 0;
-            padding: 25px;
+            padding: 20px;
             border-radius: 20px;
             border-left: 8px solid #c5e1a5;
         }
@@ -127,39 +103,72 @@
             font-size: 24px;
             border-bottom: 2px dashed #e1eedb;
             padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
-        .card p {
-            color: #33691e;
-            line-height: 1.7;
-            margin-bottom: 18px;
-            font-size: 16px;
+        /* --- Struktur List Berangka Baru (Gaya Canva) --- */
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
-        .card p:last-child {
-            margin-bottom: 0;
+        .step-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            padding: 10px 0;
         }
 
-        /* Highlight box styling */
-        .highlight-box {
-            background-color: #f1f8e9;
-            border-left: 5px solid #558b2f;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px 12px 12px 4px;
-        }
-
-        .highlight-text {
-            background-color: #fff9c4;
-            padding: 2px 6px;
-            border-radius: 4px;
+        /* Lingkaran nomor persis gambar Canva */
+        .step-number {
+            background-color: #558b2f;
+            color: white;
             font-weight: bold;
-            color: #827717;
+            font-size: 16px;
+            min-width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .step-text h3 {
+            margin: 0 0 5px 0;
+            color: #33691e;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .step-text p {
+            margin: 0;
+            color: #555555;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* Tombol Link Canva di bagian bawah */
+        .canva-btn {
+            display: block;
+            width: fit-content;
+            background-color: #558b2f;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 15px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px auto 10px auto;
+            transition: 0.3s;
+        }
+
+        .canva-btn:hover {
+            background-color: #33691e;
         }
     </style>
 </head>
-
 <body>
 
     <div class="navbar">
@@ -170,44 +179,62 @@
         </ul>
     </div>
 
-    <h1>Design</h1>
+    <h1>Product</h1>
 
-    <marquee>🦊 Yuk, cari tahu filosofi menarik di balik pembuatan logo EduFinance! ✨</marquee>
+    <marquee>🛠️ Proses Pengembangan Produk & Aplikasi EduFinance ✨</marquee>
 
-    <!-- Canva Embed Section -->
-    <div class="embed-container">
-        <iframe loading="lazy" src="https://www.canva.com/design/DAHLnXYYfFo/-YVGXcGmNclboyML8eIelA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-    </div>
-
-    <!-- Content Card Section -->
     <div class="card-container">
         <div class="card">
-            <h2>🎨 Filosofi Logo EduFinance</h2>
+            <h2>🚀 Engineering Design Process</h2>
             
-            <p>
-                🦊 <strong>Bentuk Hewan Rubah</strong> pada logo melambangkan sifat <span class="highlight-text">cerdas, waspada, dan strategis</span> yang sangat penting dalam mengatur rencana keuangan Anda.
-            </p>
+            <div class="step-list">
+                
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Riset Aplikasi (Identifikasi Masalah)</h3>
+                        <p>Menentukan masalah atau kebutuhan yang ingin diselesaikan melalui program EDUFINANCE. Banyak orang, terutama siswa, belum terbiasa mencatat pemasukan dan pengeluaran sehingga kondisi keuangan sering tidak terkontrol.</p>
+                    </div>
+                </div>
 
-            <div class="highlight-box">
-                <p style="margin: 0;">
-                    💪 <strong>Rubah Berdiri Kokoh:</strong> Mencerminkan stabilitas finansial yang kuat.<br>
-                    💰 <strong>Ekor Rubah yang Besar:</strong> Melambangkan tabungan yang dipersiapkan sebagai bentuk kesiapan menghadapi kebutuhan di masa depan.
-                </p>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Pengumpulan Ide</h3>
+                        <p>Memilih ide pengembangan program EDUFINANCE, yaitu program sederhana untuk membantu pengguna mencatat pemasukan dan pengeluaran, melihat ringkasan keuangan, serta mengekspor laporan ke Excel agar pengelolaan keuangan lebih teratur.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Design Logo (Filosofi Brand)</h3>
+                        <p>Bentuk hewan rubah melambangkan sifat cerdas dan strategis dalam mengatur keuangan. Ekor besar melambangkan tabungan masa depan, sedangkan warna pastel mint, kuning, biru, serta warna hitam menjadi identitas brand kami.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Pembuatan Website</h3>
+                        <p>Website dibuat menggunakan <strong>HTML, CSS, dan JavaScript</strong>. Desain responsif agar bisa diakses dari berbagai perangkat. Fitur slideshow memudahkan pengguna untuk melihat tutorial step-by-step.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Testing & Publikasi</h3>
+                        <p>Website diuji untuk memastikan semua fitur berjalan dengan baik, kemudian dipublikasikan melalui <strong>GitHub Pages</strong> agar mudah diakses oleh semua orang.</p>
+                    </div>
+                </div>
+
             </div>
-            
-            <p>
-                📚 Tulisan <strong>'EDU'</strong> yang menyatu pada logo menunjukkan bahwa situs ini tidak hanya berfungsi sebagai alat untuk menghitung tabungan, tetapi juga hadir sebagai <span class="highlight-text">sarana edukasi keuangan</span> yang interaktif.
-            </p>
 
-            <p>
-                🎯 Sementara itu, tulisan <strong>'FINANCE.'</strong> dengan tanda titik di akhir memberikan kesan yang <strong>tegas, pasti, dan terstruktur</strong>. Hal ini menggambarkan komitmen untuk mengambil keputusan finansial yang jelas dan terarah.
-            </p>
+            <a class="canva-btn" href="https://www.canva.com/design/DAHI9yIdJb8/cggNfIJUuBNp0ZjlddBseA/view" target="_blank" rel="noopener">
+                🔗 Lihat Selengkapnya di Canva
+            </a>
 
-            <div class="highlight-box" style="border-left-color: #212121; background-color: #f5f5f5;">
-                <p style="margin: 0; color: #212121;">
-                    ⚫ <strong>Pilihan Warna Hitam:</strong> Melambangkan ketegasan, kekuatan penuh, dan sisi profesionalitas tinggi dalam pengelolaan keuangan.
-                </p>
-            </div>
         </div>
     </div>
 
