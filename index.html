@@ -3,17 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Website</title>
+    <title>Finance Website - Design</title>
     <style>
-        h1 {
-            text-align: center;
-            font-family: "Source Sans Pro", Georgia, serif;
-            font-weight: bold;
-            color: #558b2f;
-            font-size: 32px;
-            margin-top: 20px;
-        }
-
         body {
             background-color: #f1f8e9;
             background-image: radial-gradient(#e1eedb 1px, transparent 1px);
@@ -24,6 +15,25 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            color: #33691e;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Source Sans Pro", Georgia, serif;
+            font-weight: bold;
+            color: #558b2f;
+            font-size: 36px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #689f38;
+            margin-bottom: 30px;
+            font-weight: 500;
         }
 
         .navbar {
@@ -44,10 +54,6 @@
             gap: 20px;
         }
 
-        .navbar li {
-            display: inline;
-        }
-
         .navbar a {
             background-color: #dcedc8;
             color: #33691e;
@@ -63,61 +69,72 @@
             color: #827717;
         }
 
-        marquee {
-            display: block;
-            width: 80%;
-            background-color: #dcedc8;
-            color: #33691e;
-            font-size: 24px;
-            font-weight: bold;
-            padding: 15px;
-            border-radius: 20px;
-            margin: 20px 0;
-            border: 3px dashed white;
-        }
-
         .card-container {
             background-color: #feffee;
             border: 12px solid white;
             border-radius: 40px;
-            padding: 30px;
+            padding: 40px 30px;
             width: 85%;
             max-width: 800px;
             box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+            box-sizing: border-box;
         }
 
-        .card {
+        .main-card {
             background-color: white;
-            margin: 15px 0;
-            padding: 20px;
+            margin-bottom: 30px;
+            padding: 25px;
             border-radius: 20px;
-            border-left: 8px solid #c5e1a5;
+            border-left: 8px solid #558b2f;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
 
-        .card h2 {
-            color: #558b2f;
-            margin-top: 0;
-            font-size: 20px;
-        }
-
-        .card p {
+        .main-card h2 {
             color: #33691e;
-            line-height: 1.6;
-            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 24px;
+            border-bottom: 2px solid #f1f8e9;
+            padding-bottom: 10px;
         }
 
-        .video-container {
+        /* Styling Filosofi Poin demi Poin */
+        .philosophy-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .philosophy-item {
+            background: #fafdf6;
+            padding: 15px 20px;
+            border-radius: 12px;
+            border-left: 4px solid #81c784;
+            line-height: 1.6;
+        }
+
+        .philosophy-item strong {
+            color: #2e7d32;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        /* Responsive Embed Container */
+        .embed-container {
             position: relative;
             width: 100%;
             height: 0;
             padding-top: 56.25%;
-            margin-top: 20px;
-            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 3px solid white;
+            margin: 25px 0;
         }
 
-        .video-container iframe {
+        .embed-container iframe {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -126,13 +143,27 @@
             border: none;
         }
 
-        .footer-link {
-            text-align: center;
-            display: block;
-            margin-top: 10px;
-            color: #827717;
+        /* Tombol Link Canva Keren */
+        .canva-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%);
+            color: white;
             text-decoration: none;
-            font-size: 14px;
+            font-weight: bold;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 15px;
+            box-shadow: 0 4px 15px rgba(125, 42, 232, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .canva-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(125, 42, 232, 0.4);
+            opacity: 0.95;
         }
     </style>
 </head>
@@ -147,25 +178,55 @@
         </ul>
     </div>
 
-    <h1>Finance Website</h1>
-
-    <marquee>💰 Kelola keuanganmu dengan bijak sejak dini!</marquee>
+    <h1>Design Identity</h1>
+    <div class="subtitle">Eksplorasi visual dan makna mendalam di balik platform kami</div>
 
     <div class="card-container">
-        <div class="card">
-            <h2>💰 Financial Tip</h2>
-            <p>Selalu sisihkan minimal 20% dari uangmu untuk tabungan atau investasi.</p>
+        
+        <!-- Bagian Embed Canva -->
+        <div class="main-card" style="text-align: center;">
+            <h2 style="text-align: left;">✨ Canva Live Preview</h2>
+            
+            <div class="embed-container">
+                <iframe loading="lazy" src="https://www.canva.com/design/DAHLnXYYfFo/-YVGXcGmNclboyML8eIelA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+            </div>
+
+            <!-- Tombol CTA Link Keren -->
+            <a href="https://www.canva.com/design/DAHLnXYYfFo/-YVGXcGmNclboyML8eIelA/view?utm_content=DAHLnXYYfFo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener" class="canva-btn">
+                🎨 Buka Desain di Canva
+            </a>
         </div>
 
-        <div class="card">
-            <h2>📊 Investment Idea</h2>
-            <p>Latar belakang pembuatan website EDUFINANCE berawal dari kebutuhan pelajar dalam mengatur keuangan pribadi, khususnya uang saku harian. Saat ini, banyak siswa memiliki keinginan untuk menabung demi kebutuhan atau tujuan tertentu, namun sering mengalami kesulitan karena kurangnya pemahaman dalam mengelola pemasukan dan pengeluaran. Penggunaan uang saku yang tidak terkontrol dapat menyebabkan pemborosan sehingga target menabung sulit tercapai. Oleh karena itu, EDUFINANCE hadir sebagai solusi digital yang membantu siswa mencatat uang saku serta pengeluaran harian secara praktis.</p>
+        <!-- Bagian Filosofi Logo -->
+        <div class="main-card">
+            <h2>🎨 Filosofi di Balik Logo Kami</h2>
+            <p style="font-style: italic; color: #558b2f; margin-bottom: 20px;">
+                "Wondering what's the philosophy behind our logo? Berikut adalah makna mendalam dari setiap elemen visual yang kami rancang:"
+            </p>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <strong>Karakter Rubah Cerdas & Strategis</strong>
+                    Bentuk hewan rubah pada logo melambangkan sifat cerdas, waspada, dan strategis yang penting dalam mengatur rencana keuangan.
+                </div>
+                
+                <div class="philosophy-item">
+                    <strong>Stabilitas & Masa Depan</strong>
+                    Rubah yang sedang berdiri kokoh mencerminkan stabilitas finansial, dan ekor rubah yang besar melambangkan tabungan sebagai bentuk kesiapan untuk kebutuhan di masa depan.
+                </div>
+                
+                <div class="philosophy-item">
+                    <strong>Edukatif & Terstruktur (EDUFINANCE.)</strong>
+                    Tulisan 'EDU' yang menyatu pada logo menunjukkan bahwa situs ini tidak hanya berfungsi sebagai alat untuk menghitung tabungan, tetapi juga sebagai sarana edukasi keuangan. Sementara tulisan 'FINANCE.' dengan titik di akhir memberikan kesan tegas, pasti, dan terstruktur, menggambarkan keputusan finansial yang jelas dan terarah.
+                </div>
+                
+                <div class="philosophy-item">
+                    <strong>Psikologi Warna Hitam</strong>
+                    Pilihan warna hitam pada logo melambangkan ketegasan, kekuatan, dan profesionalitas yang tinggi.
+                </div>
+            </div>
         </div>
 
-        <div class="video-container">
-            <iframe loading="lazy" src="https://www.canva.com/design/DAHGVy1Ghv8/CTIrhSBGGmwFy9xTsbiEjA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-        </div>
-        <a class="footer-link" href="https://www.canva.com/design/DAHGVy1Ghv8/CTIrhSBGGmwFy9xTsbiEjA/view" target="_blank" rel="noopener"></a>
     </div>
 
 </body>
