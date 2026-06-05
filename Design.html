@@ -77,7 +77,7 @@
             border: 3px dashed white;
         }
 
-        /* Mempertahankan struktur pembungkus asli milikmu */
+        /* --- STRUKTUR UTAMA (Asli Milikmu) --- */
         .card-container {
             background-color: #feffee;
             border: 12px solid white;
@@ -89,45 +89,34 @@
             box-sizing: border-box;
         }
 
-        .card {
+        /* --- MODIFIKASI KARTU MENJADI KOLOM PER-POIN --- */
+        .step-column {
             background-color: white;
-            margin: 15px 0;
-            padding: 20px;
-            border-radius: 20px;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 24px; /* Sudut membulat halus sesuai gambar */
             border-left: 8px solid #c5e1a5;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Bayangan lembut per kolom */
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
         }
 
-        .card h2 {
+        .step-column h2 {
             color: #558b2f;
             margin-top: 0;
-            font-size: 24px;
-            border-bottom: 2px dashed #e1eedb;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
+            font-size: 20px;
+            margin-bottom: 8px;
         }
 
-        /* --- Struktur List Berangka Baru (Gaya Canva) --- */
-        .step-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .step-item {
-            display: flex;
-            gap: 15px;
-            align-items: flex-start;
-            padding: 10px 0;
-        }
-
-        /* Lingkaran nomor persis gambar Canva */
+        /* Lingkaran Angka Hijau Minimalis */
         .step-number {
             background-color: #558b2f;
             color: white;
             font-weight: bold;
-            font-size: 16px;
-            min-width: 36px;
-            height: 36px;
+            font-size: 18px;
+            min-width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -135,21 +124,18 @@
             flex-shrink: 0;
         }
 
-        .step-text h3 {
-            margin: 0 0 5px 0;
-            color: #33691e;
-            font-size: 18px;
-            font-weight: bold;
+        .step-content {
+            flex-grow: 1;
         }
 
-        .step-text p {
+        .step-content p {
             margin: 0;
             color: #555555;
             line-height: 1.6;
             font-size: 15px;
         }
 
-        /* Tombol Link Canva di bagian bawah */
+        /* Tombol Link Canva Baru */
         .canva-btn {
             display: block;
             width: fit-content;
@@ -162,10 +148,12 @@
             text-align: center;
             margin: 30px auto 10px auto;
             transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(85,139,47,0.2);
         }
 
         .canva-btn:hover {
             background-color: #33691e;
+            transform: translateY(-1px);
         }
     </style>
 </head>
@@ -184,58 +172,51 @@
     <marquee>🛠️ Proses Pengembangan Produk & Aplikasi EduFinance ✨</marquee>
 
     <div class="card-container">
-        <div class="card">
-            <h2>🚀 Engineering Design Process</h2>
-            
-            <div class="step-list">
-                
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Riset Aplikasi (Identifikasi Masalah)</h3>
-                        <p>Menentukan masalah atau kebutuhan yang ingin diselesaikan melalui program EDUFINANCE. Banyak orang, terutama siswa, belum terbiasa mencatat pemasukan dan pengeluaran sehingga kondisi keuangan sering tidak terkontrol.</p>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Pengumpulan Ide</h3>
-                        <p>Memilih ide pengembangan program EDUFINANCE, yaitu program sederhana untuk membantu pengguna mencatat pemasukan dan pengeluaran, melihat ringkasan keuangan, serta mengekspor laporan ke Excel agar pengelolaan keuangan lebih teratur.</p>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Design Logo (Filosofi Brand)</h3>
-                        <p>Bentuk hewan rubah melambangkan sifat cerdas dan strategis dalam mengatur keuangan. Ekor besar melambangkan tabungan masa depan, sedangkan warna pastel mint, kuning, biru, serta warna hitam menjadi identitas brand kami.</p>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Pembuatan Website</h3>
-                        <p>Website dibuat menggunakan <strong>HTML, CSS, dan JavaScript</strong>. Desain responsif agar bisa diakses dari berbagai perangkat. Fitur slideshow memudahkan pengguna untuk melihat tutorial step-by-step.</p>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h3>Testing & Publikasi</h3>
-                        <p>Website diuji untuk memastikan semua fitur berjalan dengan baik, kemudian dipublikasikan melalui <strong>GitHub Pages</strong> agar mudah diakses oleh semua orang.</p>
-                    </div>
-                </div>
-
+        
+        <div class="step-column">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h2>Riset Aplikasi (Identifikasi Masalah)</h2>
+                <p>Menentukan masalah atau kebutuhan yang ingin diselesaikan melalui program EDUFINANCE. Banyak orang, terutama siswa, belum terbiasa mencatat pemasukan dan pengeluaran sehingga kondisi keuangan sering tidak terkontrol.</p>
             </div>
-
-            <a class="canva-btn" href="https://www.canva.com/design/DAHI9yIdJb8/cggNfIJUuBNp0ZjlddBseA/view" target="_blank" rel="noopener">
-                🔗 Lihat Selengkapnya di Canva
-            </a>
-
         </div>
+
+        <div class="step-column">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h2>Pengumpulan Ide</h2>
+                <p>Memilih ide pengembangan program EDUFINANCE, yaitu program sederhana untuk membantu pengguna mencatat pemasukan dan pengeluaran, melihat ringkasan keuangan, serta mengekspor laporan ke Excel agar pengelolaan keuangan lebih teratur.</p>
+            </div>
+        </div>
+
+        <div class="step-column">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h2>Design Logo (Filosofi Brand)</h2>
+                <p>Bentuk hewan rubah melambangkan sifat cerdas dan strategis dalam mengatur keuangan. Ekor besar melambangkan tabungan masa depan, sedangkan warna pastel mint, kuning, biru, serta warna hitam menjadi identitas brand kami.</p>
+            </div>
+        </div>
+
+        <div class="step-column">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h2>Pembuatan Website</h2>
+                <p>Website dibuat menggunakan <strong>HTML, CSS, dan JavaScript</strong>. Desain responsif agar bisa diakses dari berbagai perangkat. Fitur slideshow memudahkan pengguna untuk melihat tutorial step-by-step.</p>
+            </div>
+        </div>
+
+        <div class="step-column">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h2>Testing & Publikasi</h2>
+                <p>Website diuji untuk memastikan semua fitur berjalan dengan baik, kemudian dipublikasikan melalui <strong>GitHub Pages</strong> agar mudah diakses oleh semua orang.</p>
+            </div>
+        </div>
+
+        <a class="canva-btn" href="https://www.canva.com/design/DAHI9yIdJb8/cggNfIJUuBNp0ZjlddBseA/view" target="_blank" rel="noopener">
+            🔗 Lengkapnya Klik di Sini
+        </a>
+
     </div>
 
 </body>
