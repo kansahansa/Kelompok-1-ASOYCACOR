@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance Website</title>
     <style>
-        h1 {
-            text-align: center;
-            font-family: "Source Sans Pro", Georgia, serif;
-            font-weight: bold;
-            color: #558b2f;
-            font-size: 32px;
-            margin-top: 20px;
-        }
-
         body {
             background-color: #f1f8e9;
             background-image: radial-gradient(#e1eedb 1px, transparent 1px);
@@ -24,6 +15,16 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Source Sans Pro", Georgia, serif;
+            font-weight: bold;
+            color: #558b2f;
+            font-size: 36px;
+            margin-top: 30px;
+            letter-spacing: 1px;
         }
 
         .navbar {
@@ -65,12 +66,13 @@
 
         marquee {
             display: block;
-            width: 80%;
+            width: 85%;
+            max-width: 800px;
             background-color: #dcedc8;
             color: #33691e;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
-            padding: 15px;
+            padding: 12px;
             border-radius: 20px;
             margin: 20px 0;
             border: 3px dashed white;
@@ -85,12 +87,131 @@
             max-width: 800px;
             box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
             margin-bottom: 40px;
+            box-sizing: border-box;
         }
 
+        /* --- HERO SECTION (STOP BOROS) YANG BARU & WOW --- */
+        .hero-card {
+            background: linear-gradient(135deg, #ff7675, #d63031);
+            color: white;
+            margin: 15px 0 30px 0;
+            padding: 35px;
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(214, 48, 49, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .hero-card h2 {
+            color: #fff;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-card p {
+            color: #ffeaea;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .hero-highlight {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            border-left: 5px solid #fff;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .hero-highlight strong {
+            color: #fff9c4;
+            font-size: 20px;
+        }
+
+        /* --- DESIGN ANGGOTA KELOMPOK MODERN (GRID) --- */
+        .team-section h2 {
+            color: #558b2f;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .team-member {
+            background-color: white;
+            border: 2px solid #e1eedb;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(85, 139, 47, 0.1);
+            border-color: #c5e1a5;
+        }
+
+        .member-number {
+            background-color: #c5e1a5;
+            color: #33691e;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0 auto 10px auto;
+        }
+
+        .member-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #33691e;
+            margin-bottom: 5px;
+        }
+
+        .member-role {
+            font-size: 13px;
+            color: #689f38;
+            background-color: #f1f8e9;
+            padding: 4px 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* --- CARD FILOSOFI & VIDEO --- */
         .card {
             background-color: white;
             margin: 15px 0;
-            padding: 20px;
+            padding: 25px;
             border-radius: 20px;
             border-left: 8px solid #c5e1a5;
         }
@@ -98,7 +219,7 @@
         .card h2 {
             color: #558b2f;
             margin-top: 0;
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .card p {
@@ -113,9 +234,9 @@
             height: 0;
             padding-top: 56.25%;
             margin-top: 20px;
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
         }
 
         .video-container iframe {
@@ -130,8 +251,8 @@
         .footer-link {
             text-align: center;
             display: block;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-top: 12px;
+            margin-bottom: 25px;
             color: #827717;
             text-decoration: none;
             font-size: 14px;
@@ -140,17 +261,6 @@
 
         .footer-link:hover {
             text-decoration: underline;
-        }
-
-        .team-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .team-list li {
-            font-size: 16px;
-            color: #33691e;
         }
     </style>
 </head>
@@ -171,26 +281,49 @@
 
     <div class="card-container">
         
-        <div class="card" style="border-left: 8px solid #e53935;">
-            <h2 style="color: #c62828;">🛑 Stop Boros!</h2>
+        <div class="hero-card">
+            <h2>🛑 Stop Boros!</h2>
             <p>
-                Ngatur uang saku harian emang gampang-gampang susah. Pas awal minggu ngerasa aman, eh tau-tau tengah minggu dompet udah kering karena lapar mata. Akhirnya, rencana nabung cuma jadi wacana.
+                Ngatur uang saku harian emang gampang-gampang susah. Pas awal minggu ngerasa aman, eh tau-tau tengah minggu dompet udah kering karena lapar mata. Akhirnya, rencana nabung cuma jadi wacana abadi. Relate banget, kan?
             </p>
-            <br>
-            <p>
-                Karena kita paham masalah itu, kita bikin <strong>EDUFINANCE</strong>. Website ini dirancang khusus buat pelajar biar bisa pantau keuangan harian tanpa ribet. Lewat catat-mencatat yang praktis, kamu bisa rem pemborosan dan wujudin tabungan impianmu!
-            </p>
+            <div class="hero-highlight">
+                <p style="margin: 0; color: white;">
+                    Karena kami paham masalahmu, kami menghadirkan <strong>EDUFINANCE</strong>! Platform pencatat keuangan praktis yang dirancang khusus buat pelajar. Saatnya kendalikan pengeluaranmu dan wujudkan tabungan impianmu sekarang juga!
+                </p>
+            </div>
         </div>
 
-        <div class="card" style="border-left: 8px solid #80deea;">
-    <h2>👥 Anggota Kelompok</h2>
-    <ul class="team-list">
-        <li><strong>1. Najla Salsabila</strong> - Web Programmer</li>
-        <li><strong>2. Athiyatul Haniyah</strong> - Apps Programmer</li>
-        <li><strong>3. Kansa Meliahana</strong> - Graphic Designer</li>
-        <li><strong>4. Dzikrina Iffa Az-Zahra</strong> - Content Writer</li>
-    </ul>
-</div>
+        <div class="team-section">
+            <h2>👥 Tim Kreatif Di Balik EduFinance</h2>
+            <div class="team-grid">
+                
+                <div class="team-member">
+                    <div class="member-number">1</div>
+                    <div class="member-name">Najla Salsabila</div>
+                    <div class="member-role">Web Programmer</div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-number">2</div>
+                    <div class="member-name">Athiyatul Haniyah</div>
+                    <div class="member-role">Apps Programmer</div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-number">3</div>
+                    <div class="member-name">Kansa Meliahana</div>
+                    <div class="member-role">Graphic Designer</div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-number">4</div>
+                    <div class="member-name">Dzikrina Iffa</div>
+                    <div class="member-role">Content Writer</div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="video-container">
             <iframe loading="lazy" src="https://www.canva.com/design/DAHGVy1Ghv8/CTIrhSBGGmwFy9xTsbiEjA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
         </div>
